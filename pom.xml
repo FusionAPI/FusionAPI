@@ -58,4 +58,10 @@
 			<url>file://C:\Users\cyberpwn\Documents\development\workspace\Fusion\repository</url>
 		</repository>
 	</distributionManagement>
+	<repositories>
+		<repository>
+			<id>fusion-repo</id>
+			<url>https://raw.githubusercontent.com/FusionAPI/Fusion/master/repository/</url>
+		</repository>
+	</repositories>
 </project>
