@@ -5,10 +5,13 @@ package org.cyberpwn.fusionapi.registry;
  * 
  * @author cyberpwn
  */
-public interface Fuse
+public interface Fuse extends Sourced
 {
 	/**
-	 * Called when a fuse needs to register
+	 * Called when this fuse plugin is being registered
+	 * 
+	 * @param registrar
+	 *            the registrar to hold all registries
 	 */
-	public void onRegister();
+	public void onRegister(Registrar registrar);
 }
