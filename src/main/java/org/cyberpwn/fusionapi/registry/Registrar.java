@@ -1,6 +1,7 @@
 package org.cyberpwn.fusionapi.registry;
 
-import org.cyberpwn.fusionapi.type.FMaterial;
+import org.cyberpwn.fusionapi.type.FBlock;
+import org.cyberpwn.fusionapi.type.FItem;
 import org.cyberpwn.fusionapi.type.FModel;
 import org.cyberpwn.fusionapi.type.FShader;
 import org.cyberpwn.fusionapi.type.FSound;
@@ -27,7 +28,14 @@ public interface Registrar extends Sourced
 	 * 
 	 * @return the type specific registrant
 	 */
-	public Registrant<FMaterial> getMaterialRegistrant();
+	public Registrant<FItem> getItemRegistrant();
+	
+	/**
+	 * Get a type specific registrant
+	 * 
+	 * @return the type specific registrant
+	 */
+	public Registrant<FBlock> getBlockRegistrant();
 	
 	/**
 	 * Get a type specific registrant

@@ -8,7 +8,7 @@ import org.cyberpwn.fusionapi.registry.RegistryType;
  * 
  * @author cyberpwn
  */
-public interface FModel extends Registered
+public interface FModel extends Registered, FResource
 {
 	@Override
 	public default RegistryType getRegistryType()

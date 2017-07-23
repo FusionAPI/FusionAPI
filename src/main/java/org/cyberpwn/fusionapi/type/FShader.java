@@ -8,7 +8,7 @@ import org.cyberpwn.fusionapi.registry.RegistryType;
  * 
  * @author cyberpwn
  */
-public interface FShader extends Registered
+public interface FShader extends Registered, FResource
 {
 	@Override
 	public default RegistryType getRegistryType()

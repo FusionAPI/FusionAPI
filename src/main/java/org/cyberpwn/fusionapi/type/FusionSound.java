@@ -5,7 +5,10 @@ package org.cyberpwn.fusionapi.type;
  * 
  * @author cyberpwn
  */
-public class FusionSound implements FSound
+public class FusionSound extends FusionResource implements FSound
 {
-	
+	public FusionSound(String resource) 
+	{
+		super(resource);
+	}
 }

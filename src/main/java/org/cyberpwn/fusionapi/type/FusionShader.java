@@ -5,7 +5,10 @@ package org.cyberpwn.fusionapi.type;
  * 
  * @author cyberpwn
  */
-public class FusionShader implements FShader
+public class FusionShader extends FusionResource implements FShader
 {
-	
+	public FusionShader(String resource) 
+	{
+		super(resource);
+	}
 }

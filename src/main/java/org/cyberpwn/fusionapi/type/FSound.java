@@ -8,7 +8,7 @@ import org.cyberpwn.fusionapi.registry.RegistryType;
  * 
  * @author cyberpwn
  */
-public interface FSound extends Registered
+public interface FSound extends Registered, FResource
 {
 	@Override
 	public default RegistryType getRegistryType()

@@ -8,10 +8,15 @@ package org.cyberpwn.fusionapi.registry;
 public enum RegistryType
 {
 	/**
-	 * Materials are blocks and items. These may take in textures, sounds, and
+	 * Blocks may take in textures, sounds, and
 	 * models
 	 */
-	MATERIAL,
+	BLOCK,
+	
+	/**
+	 * Items are materials
+	 */
+	ITEM,
 	
 	/**
 	 * Sounds are playable files located in the plugin and are passed into

@@ -5,7 +5,10 @@ package org.cyberpwn.fusionapi.type;
  * 
  * @author cyberpwn
  */
-public class FusionTexture implements FTexture
+public class FusionTexture extends FusionResource implements FTexture
 {
-	
+	public FusionTexture(String resource) 
+	{
+		super(resource);
+	}
 }

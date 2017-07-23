@@ -8,7 +8,7 @@ import org.cyberpwn.fusionapi.registry.RegistryType;
  * 
  * @author cyberpwn
  */
-public interface FTexture extends Registered
+public interface FTexture extends Registered, FResource
 {
 	@Override
 	public default RegistryType getRegistryType()

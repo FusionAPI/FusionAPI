@@ -5,7 +5,10 @@ package org.cyberpwn.fusionapi.type;
  * 
  * @author cyberpwn
  */
-public class FusionModel implements FModel
+public class FusionModel extends FusionResource implements FModel
 {
-	
+	public FusionModel(String resource) 
+	{
+		super(resource);
+	}
 }

@@ -13,7 +13,7 @@ public interface FMaterial extends Registered
 	@Override
 	public default RegistryType getRegistryType()
 	{
-		return RegistryType.MATERIAL;
+		return null;
 	}
 	
 	/**
