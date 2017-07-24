@@ -7,8 +7,18 @@ package org.cyberpwn.fusionapi.type;
  */
 public class FusionSound extends FusionResource implements FSound
 {
-	public FusionSound(String resource) 
+	private String soundPath;
+	
+	public FusionSound(String resource, String soundPath) 
 	{
 		super(resource);
+		
+		this.soundPath = soundPath;
+	}
+
+	@Override
+	public String getSoundPath() 
+	{
+		return soundPath;
 	}
 }

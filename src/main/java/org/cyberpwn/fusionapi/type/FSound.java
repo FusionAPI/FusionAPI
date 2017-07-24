@@ -15,4 +15,11 @@ public interface FSound extends Registered, FResource
 	{
 		return RegistryType.SOUND;
 	}
+	
+	/**
+	 * Get the minecraft path for this sound
+	 * 
+	 * @return the sound path used to play it
+	 */
+	public String getSoundPath();
 }
