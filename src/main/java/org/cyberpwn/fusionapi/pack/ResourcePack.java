@@ -2,8 +2,7 @@ package org.cyberpwn.fusionapi.pack;
 
 import java.io.File;
 import java.io.IOException;
-import org.cyberpwn.fusionapi.resourcefilter.PackLense;
-import org.cyberpwn.fusionapi.resourcefilter.ResourcePackLense;
+import org.bukkit.Material;
 
 public class ResourcePack
 {
@@ -39,12 +38,66 @@ public class ResourcePack
 		return lense.getPack().write();
 	}
 	
-	public void allocate(BasicModel model, String texture, int index)
+	private void allocate(BasicModel model, String texture, int index)
 	{
 		lense.getAllocator().assign(model, texture, index);
 	}
 	
-	public void sacrifice(BasicModel model, int allocations)
+	public void allocate(Material material, String texture, int index)
+	{
+		MaterialFilter f = MaterialFilter.getFilter(material);
+		
+		if(f != null)
+		{
+			allocate(f, texture, index);
+		}
+	}
+	
+	private void allocate(MaterialFilter filter, String texture, int index)
+	{
+		if(filter.canBeAllocated())
+		{
+			allocate(filter.getBaseModel(), texture, index);
+		}
+	}
+	
+	public void sacrifice(Material material)
+	{
+		MaterialFilter f = MaterialFilter.getFilter(material);
+		
+		if(f != null)
+		{
+			sacrifice(f);
+		}
+	}
+	
+	public void sacrifice(Material material, int sects)
+	{
+		MaterialFilter f = MaterialFilter.getFilter(material);
+		
+		if(f != null)
+		{
+			sacrifice(f, sects);
+		}
+	}
+	
+	private void sacrifice(MaterialFilter f, int sects)
+	{
+		if(f.canBeAllocated())
+		{
+			sacrifice(f.getBaseModel(), sects);
+		}
+	}
+	
+	private void sacrifice(MaterialFilter filter)
+	{
+		if(filter.canBeAllocated())
+		{
+			sacrifice(filter.getBaseModel(), filter.getSectors());
+		}
+	}
+	
+	private void sacrifice(BasicModel model, int allocations)
 	{
 		lense.getAllocator().sacrifice(model, allocations);
 	}

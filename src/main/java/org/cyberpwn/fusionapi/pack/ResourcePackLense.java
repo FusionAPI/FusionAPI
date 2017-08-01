@@ -1,8 +1,4 @@
-package org.cyberpwn.fusionapi.resourcefilter;
-
-import org.cyberpwn.fusionapi.pack.BasicModel;
-import org.cyberpwn.fusionapi.pack.ItemModelBuilder;
-import org.cyberpwn.fusionapi.pack.RawResourcePack;
+package org.cyberpwn.fusionapi.pack;
 
 public class ResourcePackLense implements PackLense
 {
@@ -37,7 +33,7 @@ public class ResourcePackLense implements PackLense
 				}
 			}
 			
-			pack.write().model().item().add(ima.toResource(allocator.getMap().get(i).getTexture()));
+			pack.write().model().item().add(ima.toResource("item/" + allocator.getMap().get(i).getModel()));
 		}
 	}
 	

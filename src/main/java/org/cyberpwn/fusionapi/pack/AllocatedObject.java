@@ -1,6 +1,4 @@
-package org.cyberpwn.fusionapi.resourcefilter;
-
-import org.cyberpwn.fusionapi.pack.BasicModel;
+package org.cyberpwn.fusionapi.pack;
 
 public class AllocatedObject
 {

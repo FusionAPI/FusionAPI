@@ -1,8 +1,7 @@
-package org.cyberpwn.fusionapi.resourcefilter;
+package org.cyberpwn.fusionapi.pack;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.cyberpwn.fusionapi.pack.BasicModel;
 
 public class Allocator
 {

@@ -1,6 +1,4 @@
-package org.cyberpwn.fusionapi.resourcefilter;
-
-import org.cyberpwn.fusionapi.pack.RawResourcePack;
+package org.cyberpwn.fusionapi.pack;
 
 public interface PackLense
 {
