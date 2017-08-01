@@ -1,8 +1,1 @@
-org\cyberpwn\fusionapi\type\FusionResource.class
-org\cyberpwn\fusionapi\type\FItem.class
-org\cyberpwn\fusionapi\type\FusionBlock.class
-org\cyberpwn\fusionapi\resource\ResourceHolder.class
-org\cyberpwn\fusionapi\type\FusionItem.class
-org\cyberpwn\fusionapi\resource\Horde.class
-org\cyberpwn\fusionapi\type\FBlock.class
-org\cyberpwn\fusionapi\type\FResource.class
+org\cyberpwn\fusionapi\json\JSONObject$1.class
