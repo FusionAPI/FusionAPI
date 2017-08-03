@@ -63,6 +63,13 @@ public class PackResource
 		InputStream is = getResourceStream();
 		byte[] buf = new byte[1024];
 		
+		if(is == null)
+		{
+			System.out.println("THIS ONE: " + f.toString());
+			fos.close();
+			return;
+		}
+		
 		while(is.read(buf) != -1)
 		{
 			fos.write(buf);
